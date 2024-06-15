@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ejemplo de JavaScript</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <script>
+        function verificarNumero() {
+            //obtener el valor del input
+            const numero = document.getElementById('numero').value;
+            //convertir el valor a un numero
+            const numeroconvertido = Number(numero);
+            //obtener el elemenot donde se mostrara el resultado
+            const resultado = document.getElementById('resultado');
+            //verificar si el numero es par o impar
+            if (numeroconvertido % 2 === 0) {
+                resultado.textContent = 'El numero ${numeroconvertido} es par';
+            } else {
+                resultado.textContent = 'El numero ${numeroconvertido} es impar.';
+            }
+        }
+    </script>
+</body>
+</html>
